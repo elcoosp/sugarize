@@ -7,9 +7,14 @@
     "test": "jest --watchAll ./src ",
     "test:coverage": "jest --coverage",
     "build": "babel src/ -d lib/",
+    "dev": "nodemon src/index.js",
     "prepublish": "npm run build"
   },
-  "keywords": ["js", "sugar", "method"],
+  "keywords": [
+    "js",
+    "sugar",
+    "method"
+  ],
   "author": "elcoosp",
   "license": "MIT",
   "devDependencies": {
