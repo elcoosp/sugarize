@@ -2,7 +2,7 @@
 
 Sugarize method calls
 
-##Basic usage
+## Basic usage
 
 ```
 const {sugarizeSlow, sugarize} = require('sugarize')
