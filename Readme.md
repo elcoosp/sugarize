@@ -4,8 +4,8 @@ Sugarize method calls
 
 ## Basic usage
 
-```
-const {sugarizeSlow, sugarize} = require('sugarize')
+```javascript
+const { sugarizeSlow, sugarize } = require('sugarize')
 
 const pipeAllTheThings = (...fns) => a => fns.reduce((acc, f) => f(acc), a)
 
