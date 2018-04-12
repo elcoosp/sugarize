@@ -1,6 +1,7 @@
 # Sugarize
 
 Sugarize method calls
+
 ##Basic usage
 
 ```
