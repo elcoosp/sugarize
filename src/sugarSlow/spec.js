@@ -8,6 +8,10 @@ test('should call the first arg as a method on the third arg with the second arg
   expect(sugarSlow('repeat')(3)('str')).toEqual('strstrstr')
 })
 
+test('should call the first arg as a method on the third arg with the second multiple args as args of the method call', () => {
+  expect(sugarSlow('split')('.', 3)('str.t.t.o')).toEqual(['str', 't', 't'])
+})
+
 test('should throw an error if the method does not exist on the third arg', () => {
   expect(() => sugarSlow('toUpperCgergfzfezase')()('str')).toThrow()
 })
