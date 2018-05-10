@@ -1,9 +1,11 @@
 {
   "name": "sugarize",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Sugarize method calls",
   "main": "lib/index.js",
-  "files": ["lib/"],
+  "files": [
+    "lib/"
+  ],
   "scripts": {
     "test": "jest",
     "test:cov": "jest --coverage",
@@ -11,7 +13,11 @@
     "dev": "nodemon src/index.js",
     "prepare": "./node_modules/.bin/babel src/ -d lib/"
   },
-  "keywords": ["js", "sugar", "method"],
+  "keywords": [
+    "js",
+    "sugar",
+    "method"
+  ],
   "author": "elcoosp",
   "license": "MIT",
   "devDependencies": {
