@@ -1,6 +1,6 @@
 {
   "name": "sugarize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sugarize method calls",
   "main": "lib/index.js",
   "files": [
