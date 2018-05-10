@@ -1,6 +1,12 @@
 # Sugarize
 
+[![Build Status](https://travis-ci.org/elcoosp/sugarize.svg?branch=master)](https://travis-ci.org/elcoosp/sugarize)
+
 Sugarize method calls
+
+## Install
+
+`npm i -S sugarize`
 
 ## Basic usage
 

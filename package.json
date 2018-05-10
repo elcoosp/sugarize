@@ -2,13 +2,16 @@
   "name": "sugarize",
   "version": "1.0.0",
   "description": "Sugarize method calls",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
-    "test": "jest --watchAll ./src ",
-    "test:coverage": "jest --coverage",
+    "test": "jest",
+    "test:cov": "jest --coverage",
     "build": "babel src/ -d lib/",
     "dev": "nodemon src/index.js",
-    "prepublish": "npm run build"
+    "prepare": "babel src/ -d lib/"
   },
   "keywords": [
     "js",
@@ -19,7 +22,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-flow": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
     "jest": "^22.4.3",
     "node-fetch": "^2.1.2",
     "nodemon": "^1.17.3"

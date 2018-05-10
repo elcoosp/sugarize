@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- 'node'
+deploy:
+  provider: npm
+  email: elcoosp
+  api_key:
+    secure: bsoGID+tM5w+XJyaYxpITE3X8M4Ibf9F7rBWNliST9oyfm6EX5kWZaOSLEi1wiKOV3CQuRG2Y+oD9W6ET4i2+tQzctc7GqHKBYsw9ImZKJYFE12WVNDxapYTPF6CSVTjKD7Dux86jmY1aksJMSiGiJMRFGbPhRskP+7Ctf6zC+k4zRRRHG6FWtcM4Lkteg2tmmZBeA+j/iGiC8ghEe+//TXr3X5TfbWjdiI0p2RCBNTa50p7u5jlHQHkDPNNovEqtDOUT1sE6vnWT0CqDjap+fXGJykZKTjqEdUqjRtXt2bYTGhUa0RQv0HdEXqDdfLel3DbKaSSJHHj2w6Ei8i+f1JLWL0ZoOMwv3CaeyJ+Ymo+vGNnLMHX4JQ7Y/u9wcZ4Qg9ud0FvUy9+HWa9V78bs+uv2xtmdm5xxxh0VsNA0e7D9hJ1tpjC7qjD4h4oRPaTDmSU4ea2EVUi6l6HUaRVuWu5kzLRaw22hcAypQHBFO79C8DSpqoOXBobSvw8USu2/uktrPhj6OO/dI2lunYSlFQmftPOxX+x0Ek90R7vsoADM1lF+9QA9L9oR9EBmAPt2XbOAKBCvXT/fDYBXx3v/3vaSqWsk+pAUoTC9I8NZnuxu1Cp5ytT2BEn4zc39mbfLllbOcyaQSbAqBnR1eQNL6HGYp+UkkXHusgw1vm0tG0=
+  on:
+    tags: true
+    repo: elcoosp/sugarize
