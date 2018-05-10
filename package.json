@@ -3,21 +3,15 @@
   "version": "1.0.5",
   "description": "Sugarize method calls",
   "main": "lib/index.js",
-  "files": [
-    "lib/"
-  ],
+  "files": ["lib/"],
   "scripts": {
     "test": "jest",
     "test:cov": "jest --coverage",
-    "build": "babel src/ -d lib/",
+    "build": "./node_modules/.bin/babel src/ -d lib/",
     "dev": "nodemon src/index.js",
-    "prepare": "babel src/ -d lib/"
+    "prepare": "./node_modules/.bin/babel src/ -d lib/"
   },
-  "keywords": [
-    "js",
-    "sugar",
-    "method"
-  ],
+  "keywords": ["js", "sugar", "method"],
   "author": "elcoosp",
   "license": "MIT",
   "devDependencies": {
