@@ -3,29 +3,44 @@
   "version": "1.0.7",
   "description": "Sugarize method calls",
   "main": "lib/index.js",
-  "files": [
-    "lib/"
-  ],
+  "files": ["lib/"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elcoosp/sugarize.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elcoosp/sugarize/issues"
+  },
+  "homepage": "https://github.com/elcoosp/sugarize#readme",
+  "keywords": ["js", "sugar", "method"],
   "scripts": {
     "test": "jest",
     "test:cov": "jest --coverage",
-    "build": "./node_modules/.bin/babel src/ -d lib/",
+    "build": "babel src/ -d lib/",
     "dev": "nodemon src/index.js",
-    "prepare": "./node_modules/.bin/babel src/ -d lib/"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once",
+    "commit": "git-cz",
+
+    "prepare": "npm run build"
   },
-  "keywords": [
-    "js",
-    "sugar",
-    "method"
-  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "author": "elcoosp",
-  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
     "jest": "^22.4.3",
     "node-fetch": "^2.1.2",
-    "nodemon": "^1.17.3"
+    "nodemon": "^1.17.3",
+    "semantic-release": "^15.4.1",
+    "travis-deploy-once": "^5.0.0"
   },
   "dependencies": {}
 }
