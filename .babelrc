@@ -1,4 +1,5 @@
 {
   "presets": ["env"],
-  "ignore": "\\spec.js"
+  "ignore": "\\spec.js",
+  "plugins": ["transform-object-rest-spread"]
 }
