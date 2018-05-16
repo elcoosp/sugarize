@@ -1,9 +1,11 @@
 {
   "name": "sugarize",
-  "version": "1.0.7",
+  "version": "0.0.0-development",
   "description": "Sugarize method calls",
   "main": "lib/index.js",
-  "files": ["lib/"],
+  "files": [
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/elcoosp/sugarize.git"
@@ -13,7 +15,11 @@
     "url": "https://github.com/elcoosp/sugarize/issues"
   },
   "homepage": "https://github.com/elcoosp/sugarize#readme",
-  "keywords": ["js", "sugar", "method"],
+  "keywords": [
+    "js",
+    "sugar",
+    "method"
+  ],
   "scripts": {
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
