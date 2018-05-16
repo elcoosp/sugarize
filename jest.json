@@ -1,5 +1,6 @@
 {
   "testEnvironment": "node",
+  "testPathIgnorePatterns": ["/node_modules/", "!<rootDir>/src/index.js"],
   "modulePaths": ["src", "/node_modules/"],
   "coverageThreshold": {
     "global": {
@@ -9,5 +10,5 @@
       "statements": 100
     }
   },
-  "collectCoverageFrom": ["src/**/*.js"]
+  "collectCoverageFrom": ["src/**/*.js", "!<rootDir>/src/index.js"]
 }
