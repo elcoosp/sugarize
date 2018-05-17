@@ -28,22 +28,6 @@ const c = pipe(...sugarize('toUpperCase', 'toLowerCase'))('str')
 c // str
 ```
 
-## Or with proxy version
-
-This version produce exactly the same result but use a proxy behind, so it is not safe to use for production purpose.
-
-```javascript
-const { proxiedSugarizeSlow, proxiedSugarize } = require('sugarize')
-
-const { toUpperCase, toLowerCase } = proxiedSugarize // Just extract the method call you need
-const a = pipe(toUpperCase, toLowerCase)('str')
-// str
-
-const { repeat, toUpperCase } = proxiedSugarizeSlow
-const a = pipe(repeat(3), toUpperCase())('str')
-// STRSTRSTR
-```
-
 This works with any custom method, since the sugar function return a new function ready to call the given method with arguments (in the case of the sugarSlow version).
 
 ```javascript
@@ -67,4 +51,20 @@ pipe(doThing('sport'), makeBar)(obj)
 ​​​​​// making: 'Making bar',​​​​​
 ​​​​​// doThing: [λ: doThing],​​​​​
 ​​​​​// makeBar: [λ: makeBar] }​​​​​
+```
+
+## Or with proxy version
+
+This version produce exactly the same result but use a proxy behind, so it is not safe to use for production purpose.
+
+```javascript
+const { proxiedSugarizeSlow, proxiedSugarize } = require('sugarize')
+
+const { toUpperCase, toLowerCase } = proxiedSugarize // Just extract the method call you need
+const a = pipe(toUpperCase, toLowerCase)('str')
+// str
+
+const { repeat, toUpperCase } = proxiedSugarizeSlow
+const a = pipe(repeat(3), toUpperCase())('str')
+// STRSTRSTR
 ```
