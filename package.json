@@ -18,7 +18,8 @@
   "keywords": [
     "js",
     "sugar",
-    "method"
+    "method",
+    "proxy"
   ],
   "scripts": {
     "lint": "eslint src",
