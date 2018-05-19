@@ -64,7 +64,7 @@ const { toUpperCase, toLowerCase } = proxiedSugarize // Just extract the method 
 const a = pipe(toUpperCase, toLowerCase)('str')
 // str
 
-const { repeat, toUpperCase } = proxiedSugarizeSlow
-const a = pipe(repeat(3), toUpperCase())('str')
-// STRSTRSTR
+const { map, repeat, toUpperCase, join } = proxiedSugarizeSlow
+const a = pipe(map(repeat(2)), join(''), toUpperCase())(['s', 't', 'r'])
+// SSTTRR
 ```
