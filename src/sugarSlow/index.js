@@ -1,6 +1,3 @@
-const abortIfError = require('../abortIfError')
-
-const sugarSlow = method => (...args) => val =>
-  abortIfError(val, method) && val[method](...args)
+const sugarSlow = method => (...args) => val => val[method](...args)
 
 module.exports = sugarSlow
