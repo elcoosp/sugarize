@@ -2,6 +2,7 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/elcoosp/sugarize.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/elcoosp/sugarize.svg?branch=master)](https://travis-ci.org/elcoosp/sugarize)
+[![codecov](https://codecov.io/gh/elcoosp/sugarize/branch/master/graph/badge.svg)](https://codecov.io/gh/elcoosp/sugarize)
 
 Sugarize method calls instead of creating functions specially for piping.
 
