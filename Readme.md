@@ -19,16 +19,16 @@ const pipe = (...fns) => a => fns.reduce((acc, f) => f(acc), a)
 
 const [up, low, rep] = sugarizeSlow('toUpperCase', 'toLowerCase', 'repeat')
 const a = pipe(
-  up(),
-  low(),
-  rep(3)
+	up(),
+	low(),
+	rep(3)
 )('str')
 a // ​​​​​strstrstr​​​​​
 
 const [upper, lower] = sugarize('toUpperCase', 'toLowerCase')
 const b = pipe(
-  upper,
-  lower
+	upper,
+	lower
 )('str')
 b // str
 
@@ -70,16 +70,16 @@ const { proxiedSugarizeSlow, proxiedSugarize } = require('sugarize')
 
 const { toUpperCase, toLowerCase } = proxiedSugarize // Just extract the method call you need
 const a = pipe(
-  toUpperCase,
-  toLowerCase
+	toUpperCase,
+	toLowerCase
 )('str')
 // str
 
 const { map, repeat, toUpperCase, join } = proxiedSugarizeSlow
 const a = pipe(
-  map(repeat(2)),
-  join(''),
-  toUpperCase()
+	map(repeat(2)),
+	join(''),
+	toUpperCase()
 )(['s', 't', 'r'])
 // SSTTRR
 ```
